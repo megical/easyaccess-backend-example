@@ -1,0 +1,55 @@
+{
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "strict": ["error", "global"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "camelcase": [
+      "error",
+      {
+        "allow": [
+          "login_challenge",
+          "consent_challenge",
+          "remember_for",
+          "grant_scope",
+          "grant_access_token_audience",
+          "client_id",
+          "client_secret",
+          "redirect_uris",
+          "code_verifier",
+          "code_challenge",
+          "code_challenge_method",
+          "token_endpoint_auth_method",
+          "token_endpoint_auth_signing_alg",
+          "client_name",
+          "grant_types",
+          "response_types",
+          "subject_type",
+          "userinfo_signed_response_alg",
+          "access_token"
+        ]
+      }
+    ]
+  },
+  "extends": "standard",
+  "globals": {
+    "before": true,
+    "beforeEach": true,
+    "context": true,
+    "describe": true,
+    "it": true,
+    "test": true,
+    "expect": true,
+    "afterAll": true,
+    "jest": true,
+    "beforeAll": true
+  }
+}
